@@ -1,0 +1,11 @@
+
+# Temp files
+*~
+~*
+*#
+*.asv
+*.swp
+
+# Working folder
+work
+
