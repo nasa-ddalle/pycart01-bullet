@@ -16,7 +16,6 @@ fnames = [
     "pyCart.json",
     "bullet.tri",
     "Config.xml",
-    "inputs/conf/Config.xml",
     "matrix.csv"
 ]
 
