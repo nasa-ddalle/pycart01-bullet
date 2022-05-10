@@ -4,17 +4,15 @@
 Demo 1: Basic Usage on a Bullet Shape
 =====================================
 
-The first example demonstrates how pyCart and other Cape interfaces generate
+The first example demonstrates how pyCart and other CAPE interfaces generate
 parametrically named files, interact with the master JSON file, and set up
-Cart3D input files. This example is found in the file
+Cart3D input files.
 
-    ``pycart01-bullet.tar.gz``
-
-To get started, download this file and run the following easy commands:
+To get started, clone this repo and run the following commands:
 
     .. code-block:: console
 
-        $ tar -xzf pycart01-bullet.tar.gz
+        $ git clone https://github.com/nasa-ddalle/pycart01-bullet.git
         $ cd pycart01-bullet
         $ ./copy-files.py
         $ cd work/
