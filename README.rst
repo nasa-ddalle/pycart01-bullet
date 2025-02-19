@@ -93,21 +93,21 @@ this command, the following steps are taken as a result of this command.
 
     1. Read project settings from ``pyCart.json`` and conditions from
        ``matrix.csv``
-        
-    2. Create the mesh
+       
+    2. Prepare the case
     
       A. Create the ``poweroff`` folder
-      B. Read the ``bullet.tri`` file and write it to the ``poweroff`` folder
-      C. Run ``autoInputs`` to create ``input.c3d`` and ``preSpec.c3d.cntl``
-      D. Run ``cubes`` to create volume mesh ``Mesh.c3d``
-      E. Run ``mgPrep`` to prepare the grid for multigrid
-       
-    3. Prepare the case
+      B. Create the ``m1.50a0.0b0.0`` folder
+      C. Link the mesh files created in the previous step
+      D. Copy the template ``input.cntl`` and set Mach, alpha, and beta
+      E. Create a PBS script ``run_cart3d.pbs``
+        
+    3. Create the mesh
     
-      A. Create the ``m1.50a0.0b0.0`` folder
-      B. Link the mesh files created in the previous step
-      C. Copy the template ``input.cntl`` and set Mach, alpha, and beta
-      D. Create a PBS script ``run_cart3d.pbs``
+      A. Read the ``bullet.tri`` file and write to the ``m1.50a0.0b0.0`` folder
+      B. Run ``autoInputs`` to create ``input.c3d`` and ``preSpec.c3d.cntl``
+      C. Run ``cubes`` to create volume mesh ``Mesh.c3d``
+      D. Run ``mgPrep`` to prepare the grid for multigrid
     
     4. Run the case by calling ``bash run_cart3d.pbs``
 
